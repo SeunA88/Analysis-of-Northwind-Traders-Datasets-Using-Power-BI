@@ -1,1 +1,1 @@
-# Analysis-of-Northwind-Traders-Datasets-Using-Power-BI
+# Analysis of Northwind Traders Datasets Using Power BI
