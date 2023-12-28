@@ -38,8 +38,11 @@ Average age of the bank clients/depositors: This gives an insight into the avera
 
 #### Representing all data.
 
-![](Task3_dashboard.png)
+![](project_dashboard.png)
 
+----
+
+![](project_model.png)
 ---
 
 ## Conclusion
