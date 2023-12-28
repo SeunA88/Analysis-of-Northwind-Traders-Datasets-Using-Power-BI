@@ -14,6 +14,20 @@ In this task, an interactive dashboard was created by combining multiple visuali
 
 In creating the dashboard, some data were selected to aid understandng and to bring out some insights from the data. The following data were focussed on and visualised in the dashboard. 
 
+- Most ordered product category = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Category Name]), SUM('order + order_details'[quantity])),1)
+- Highest paying customer = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[unitPrice])),1)
+- Order Processing time = DATEDIFF('Full table'[Order Date].[Date],'Full table'[Order Shipped Date].[Date],DAY)
+- Top Employee = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), SUM('order + order_details'[shipperID])),1)
+- Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)
+- Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)
+- Total Order Quantity by Product Category
+- Order Quantities by Customer's Country
+- Total Order Quantity by Quarter
+- Number of Orders by Shippers
+- Number of Customers per Employee
+  
+- 
+
 Average age of the bank clients/depositors: This gives an insight into the average age of depositors at the bank and informed decisions can be made as to what age range can be focussed on when campaigning to clients about new bank term deposits. From the data, it can be seen that 41 years is the average age of the bank depositors.
   
 - Average yearly balance of the bank clients/depositors: This gives an insight into the average yearly balance of the bank depositors and can also be used to narrow down campaign focus to prospective clients. From the data, it can be seen that $1,362 is the average yearly balance of the bank depositors.
@@ -42,8 +56,10 @@ Average age of the bank clients/depositors: This gives an insight into the avera
 
 ----
 
+- Data Modelling: This gives an insight into the relationship among the 7 datasets used for this analysis. Find below the data model for the datasets.
+  
 ![](project_dashboard.png)
 ---
 
 ## Conclusion
-In the two tasks above, Data visulaization tools and DAX were used to communicate insights that can be useful in targeting and focusing on specific client types and campaigns that can help in maximizing the number of prospective clients to sign up for term deposits with the bank.
+By interacting with the dashboard above, more insights can be generated from the Northwind traders datasets and by studying the inter relatonship among the datasets as shown in the data model, diverse analytical understanding and judgements can be made. All these insights will help in maximizing the profitability and overall success of Northwind Traders business.
