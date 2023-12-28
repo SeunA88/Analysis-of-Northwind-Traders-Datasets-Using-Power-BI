@@ -1,6 +1,6 @@
 # Analysis of Northwind Traders Datasets Using Power BI
 
-![](logo.jpg)
+![](logo.png)
 
 ---
 
