@@ -53,42 +53,27 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
    **Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)**
 
-   From this analysis, the most ordered product is **Alice Mutton**. 
-- Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)
--
--
--
-- Total Order Quantity by Product Category
-- Order Quantities by Customer's Country
-- Total Order Quantity by Quarter
-- Number of Orders by Shippers
-- Number of Customers per Employee: Recognition of the Employee that handles the most customers and orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success.
+   From this analysis, the most ordered product is **Alice Mutton**.
   
-- 
+- **Customer that orders most**: This insight is as valuable as the highest paying customer, With this insight just like that of the highest paying customer, the business can take note of the buying trend of this customer, find means of retaining this customer including giving of discounts, and also focusing on satisfactory services especially prompt delivery to this customer. The following DAX was used to generate this insight:
+  
+    **Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)**
 
-Average age of the bank clients/depositors: This gives an insight into the average age of depositors at the bank and informed decisions can be made as to what age range can be focussed on when campaigning to clients about new bank term deposits. From the data, it can be seen that 41 years is the average age of the bank depositors.
+     From this analysis, the customer that orders the most is **Alfred Futterkiste**.
   
-- Average yearly balance of the bank clients/depositors: This gives an insight into the average yearly balance of the bank depositors and can also be used to narrow down campaign focus to prospective clients. From the data, it can be seen that $1,362 is the average yearly balance of the bank depositors.
+- **Total Order Quantity by Product Category**: From this analysis, insight on the frequently ordered product categories can be derived. This can help monitor and drive sales towards these product categories and hence maximize sales and profit. **Beverages product category** tops the chart, followed by other product categories like Dairy Products, Confections and Seafood.
   
-- Total number of subscribed/target clients : An insight into how many of the clients/ depositors subscribed to the term deposits after campaigns is seen here, and also which clients haven't subscribed but are still targets/potential subscribers. A total 45,211 clients were found.
-    
-- Total campaign by job type: This gives an insight into the job type that had the highest total number of campaigns. It can be seen that blue-collar, management and technician jobs topped the chart in the campaigns.
+- **Order Quantities by Customer's Country**: With this analysis, we can observe the countries where most orders are from. This can help with adequate planning of logistics and order delivery. Also, possibility of warehouses in the top ordering countries may not be a bad idea in the near future. **USA, Germany, followed by Austria** are the top three countries where most orders come from.
   
-- Total number of poutcome by education: This gives an insight into the Education level of depositors based on previous campaign outcomes. It shows the focus of the previous campaign was majorly on secondary school level, followed by Tertiary level.  Depending on these outcomes and targets, campaigns can be tailored towards whatever level of education can give the desired outcome.
+- **Total Order Quantity by Quarter**: This analysis shows the trend of total order quantities by quarter starting from **July 2013 to April 2015**. From the trend grapgh, it can be observed that the highest order quantity was in **Jan 2015**.
+
+- **Number of Orders by Shippers**: This insight is targeted towards optimization of logistics and order delivery, most importantly order fulfilment. From this analysis it can be seen that most orders are shipped by **United Package**. With more analysis, insights on order fulfilment by each Shipping agency reveals **United Package** also fulfilled the most orders.
   
-- Total number of subscribed/target clients by credit in default: This gives an insight into the percentage of depositors with credit in default. Over 95% of depositors do not have a credit in default.
-  
-- Total number of subscribed/target clients by marital status: This gives an insight into the marital status of the depositors. About 60% of the depositors are married, about 27% are single while about 12 % are divorced.
-- 
-- Total number of subscribed/target clients by campaign: What are the outcomes of the campaign based on client subscription? How many campaigns were carried out before the client subscribed for term deposit? These insights can be drawn from this visual.
-  
-- Average balance by subscribed/target clients: From this visual, it can be seen that about 72% of clients haven't subscribed to the term deposit yet, also depositors that have subscribed to the term deposit have an average yearly balance of about $1,804.
-  
-- A slicer was added to the dashboard to help in filtering the subscribed/target clients. When filter is selected as 'yes" or "no", data can be compared across the dashboard and an insight into a summary/update of the success of the campaign projects can be visualised.
+- **Number of Customers per Employee**: Recognition of the Employee that handles the most customers and orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success. **Margaret Peacock** had the most customers and also handled the most orders.
+
 
 #### Please find below the dashboard created. Feel free to interact with dashboard here (https://github.com/SeunA88/Early-steps-with-Power-BI-Dashboard-and-DAX/blob/main/Task%203.pbix)
 
-#### Representing all data.
 
 ![](Dashboard.png)
 
