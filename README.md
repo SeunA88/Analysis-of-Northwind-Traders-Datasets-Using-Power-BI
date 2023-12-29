@@ -43,18 +43,17 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
   From this analysis, the Highest paying customer is **Alfred Futterkiste**. 
   
-  
 - **Order Processing time**: Using DAX, a new column was created to show the order processing time, an average of this was then calculated and displayed on the dashboard. This insight can help in optimizing the order fulfilment rte and reduce/eliminate delayed orders as well as avoid cancelled orderd due to delayed processing/delivery. The following DAX was used to generate this insight:
 
   **Order Processing time = DATEDIFF('Full table'[Order Date].[Date],'Full table'[Order Shipped Date].[Date],DAY)**
 
   From this analysis, the Average Order Processing time is **8.35 days**. 
 
+- **Most ordered product**: This gives an insight into the most selling product, by knowing this, the business can focus more on this product, study why its being ordered the most and see how they can optimize the sales of this product. The following DAX was used to generate this insight:
 
+   **Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)**
 
-
-  
-- Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)
+   From this analysis, the most ordered product is **Alice Mutton**. 
 - Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)
 -
 -
