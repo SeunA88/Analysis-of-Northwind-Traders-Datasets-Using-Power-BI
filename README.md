@@ -6,9 +6,20 @@
 
 ## Introduction
 
-Data visualization is an important aspect in Power BI that enhances understanding of data, communication of insights, and decision-making based on generated insights; by representing data graphically in visually appealing and easily understandable manner. 
+Use of various types of data visuals in creating interactive dashboards as well as displaying of inter relationships among different datasets are important aspects of data analysis that depict datasets in an easily understandable manner and hereby help in decision making based on generated insights.
 
-In this task, an interactive dashboard was created by combining multiple visualizations with each telling its own story. The data used for this dashboard creation is Bank deposit dataset(https://github.com/SeunA88/Early-steps-with-Power-BI-Dashboard-and-DAX/blob/main/bank-full.csv). It basically contains information about bank depositors/clients such as name, age, marital status, age, credit history, loan history as well as other important information. Also, the  data details the different bank campaigns carried out alongside their outcomes with each depositors/clients.
+In this analysis, an interactive dashboard was created by combining multiple visualizations with each telling its own story. Seven different datasets were used for this analysis. They are:
+
+1.)
+2.)
+3.)
+4.)
+5.)
+6.)
+7.)
+
+The datasets were joined together using their common columns and Complete dataset containing all necessary columns and information was generarted. The Complete dataset/table basically contains column information such as name, age, marital status, age, credit history, loan history as well as other important information. Also, the  data details the different bank campaigns carried out alongside their outcomes with each depositors/clients. This Complete dataset was then used for the analysis. Data Analysis Expression DAX was used to generate some insights and graphcal visuals were designed from the complete datasets as well.
+
 
 ## Creating the Dashboard
 
