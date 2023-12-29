@@ -35,20 +35,28 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
    **Most ordered product category = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Category Name]), SUM('order + order_details'[quantity])),1)**
   
+ From this analysis, the most ordered product category is **Beverages**. 
   
 - **Highest paying customer**: This can also be termed the Most Valuable Customer, knowing this can help the business take note of the buying trend of this customer, find means of retaining this customer including giving of discounts, and also focusing on satisfactory services especially prompt delivery to this customer. The following DAX was used to generate this insight:
 
    **Highest paying customer = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[unitPrice])),1)**
+
+  From this analysis, the Highest paying customer is **Alfred Futterkiste**. 
   
   
 - **Order Processing time**: Using DAX, a new column was created to show the order processing time, an average of this was then calculated and displayed on the dashboard. This insight can help in optimizing the order fulfilment rte and reduce/eliminate delayed orders as well as avoid cancelled orderd due to delayed processing/delivery. The following DAX was used to generate this insight:
 
-- **Order Processing time = DATEDIFF('Full table'[Order Date].[Date],'Full table'[Order Shipped Date].[Date],DAY)**
+  **Order Processing time = DATEDIFF('Full table'[Order Date].[Date],'Full table'[Order Shipped Date].[Date],DAY)**
+
+From this analysis, the Averahge Order Processing time is **8.35 days**. 
 
 
 - Top Employee = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), SUM('order + order_details'[shipperID])),1)
 - Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)
 - Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)
+-
+-
+-
 - Total Order Quantity by Product Category
 - Order Quantities by Customer's Country
 - Total Order Quantity by Quarter
