@@ -51,11 +51,7 @@ In creating the dashboard, some data were selected to aid understandng and to br
   From this analysis, the Average Order Processing time is **8.35 days**. 
 
 
-- **Top Employee**: Recognition of the Employee that handles the most orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success. The following DAX was used to generate this insight:
 
-  **Top Employee =  FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), COUNT('Full table'[OrderID])),1)**
-  
-  From this analysis, the Top Employee is **Andrew Fuller**.
 
   
 - Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)
@@ -67,7 +63,7 @@ In creating the dashboard, some data were selected to aid understandng and to br
 - Order Quantities by Customer's Country
 - Total Order Quantity by Quarter
 - Number of Orders by Shippers
-- Number of Customers per Employee
+- Number of Customers per Employee: Recognition of the Employee that handles the most customers and orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success.
   
 - 
 
