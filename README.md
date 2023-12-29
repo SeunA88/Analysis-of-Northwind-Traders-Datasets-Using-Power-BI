@@ -10,20 +10,19 @@ Use of various types of data visuals in creating interactive dashboards as well 
 
 In this analysis, an interactive dashboard was created by combining multiple visualizations with each telling its own story. Seven different datasets were used for this analysis. They are:
 
-1.)
+1.) Employee data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/employees.csv).
 
-2.)
+2.) Customers data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/customers.csv).
 
-3.)
+3.) Categories data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/categories.csv).
 
-4.)
+4.) Order_details data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/order_details.csv).
 
-5.)
+5.) Orders data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/orders.csv).
 
-6.)
+6.) Products data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/products.csv).
 
-7.)
-
+7.) Shippers data (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/shippers.csv).
 
 The datasets were joined together using their common columns and Complete dataset containing all necessary columns and information was generarted. The Complete dataset/table can be seen here (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/Complete_dataset.xlsx).  This Complete dataset was then used for the analysis. Data Analysis Expression DAX was used to generate some insights and graphcal visuals were designed from the complete datasets as well.
 
