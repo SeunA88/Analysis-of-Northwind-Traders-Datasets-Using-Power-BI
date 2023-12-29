@@ -53,7 +53,7 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
 - **Top Employee**: Recognition of the Employee that handles the most orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success. The following DAX was used to generate this insight:
 
-  **Top Employee = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), SUM('order + order_details'[shipperID])),1)**
+  **Top Employee =  FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), COUNT('Full table'[OrderID])),1)**
   
   From this analysis, the Top Employee is **Andrew Fuller**.
 
