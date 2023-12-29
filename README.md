@@ -72,16 +72,30 @@ In creating the dashboard, some data were selected to aid understandng and to br
 - **Number of Customers per Employee**: Recognition of the Employee that handles the most customers and orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success. **Margaret Peacock** had the most customers and also handled the most orders.
 
 
-#### Please find below the dashboard created. Feel free to interact with dashboard here (https://github.com/SeunA88/Early-steps-with-Power-BI-Dashboard-and-DAX/blob/main/Task%203.pbix)
-
+#### Please find below the dashboard created. Feel free to interact with dashboard here (https://github.com/SeunA88/Analysis-of-Northwind-Traders-Datasets-Using-Power-BI/blob/main/Project.pbix).
 
 ![](Dashboard.png)
 
 ----
 
-- Data Modelling: This gives an insight into the relationship among the 7 datasets used for this analysis. Find below the data model for the datasets.
+- **Data Modelling**: This gives an insight into the relationship among the 7 datasets used for this analysis. Relationships observed include:
+- 
+  1.)  Many to One Relationship between Employees data and Orders data with EmployeesID being the common column.
+  
+  2.)  Many to One Relationship between Order_details data and Orders data with OrderID being the common column.
+  
+  3.)  Many to One Relationship between Order data and Customers data with CustomerID being the common column.
+  
+  4.)  Many to One Relationship between Order_details data and Products data with ProductID being the common column.
+  
+  5.)  One to Many Relationship between Shippers data and Orders data with ShipperID being the common column.
+  
+  6.)  One to Many Relationship between Categories data and Products data with CategoryID being the common column.
+
+  Please find below the data model for the datasets.
   
 ![](project_dashboard.png)
+
 ---
 
 ## Conclusion
