@@ -1,4 +1,4 @@
-# Analysis of Northwind Traders Datasets Using Power BI
+ # Analysis of Northwind Traders Datasets Using Power BI
 
 ![](logo.png)
 
@@ -35,7 +35,7 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
    **Most ordered product category = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Category Name]), SUM('order + order_details'[quantity])),1)**
   
- From this analysis, the most ordered product category is **Beverages**. 
+   From this analysis, the most ordered product category is **Beverages**. 
   
 - **Highest paying customer**: This can also be termed the Most Valuable Customer, knowing this can help the business take note of the buying trend of this customer, find means of retaining this customer including giving of discounts, and also focusing on satisfactory services especially prompt delivery to this customer. The following DAX was used to generate this insight:
 
@@ -48,10 +48,16 @@ In creating the dashboard, some data were selected to aid understandng and to br
 
   **Order Processing time = DATEDIFF('Full table'[Order Date].[Date],'Full table'[Order Shipped Date].[Date],DAY)**
 
-From this analysis, the Averahge Order Processing time is **8.35 days**. 
+  From this analysis, the Average Order Processing time is **8.35 days**. 
 
 
-- Top Employee = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), SUM('order + order_details'[shipperID])),1)
+- **Top Employee**: Recognition of the Employee that handles the most orders successfully can help optimize the performance of the employee as well as the colleagues, all towards creating an encouraging and enabling environment for profit maximization and business success. The following DAX was used to generate this insight:
+
+  **Top Employee = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Employees Name]), SUM('order + order_details'[shipperID])),1)**
+  
+  From this analysis, the Top Employee is **Andrew Fuller**.
+
+  
 - Most ordered product = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Product Name]), SUM('order + order_details'[quantity])),1)
 - Customer that orders most = FIRSTNONBLANK(TOPN(1, VALUES('Full table'[Customer Company Name]), SUM('order + order_details'[quantity])),1)
 -
