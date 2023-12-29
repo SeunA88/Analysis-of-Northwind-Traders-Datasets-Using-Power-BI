@@ -11,12 +11,19 @@ Use of various types of data visuals in creating interactive dashboards as well 
 In this analysis, an interactive dashboard was created by combining multiple visualizations with each telling its own story. Seven different datasets were used for this analysis. They are:
 
 1.)
+
 2.)
+
 3.)
+
 4.)
+
 5.)
+
 6.)
+
 7.)
+
 
 The datasets were joined together using their common columns and Complete dataset containing all necessary columns and information was generarted. The Complete dataset/table basically contains column information such as name, age, marital status, age, credit history, loan history as well as other important information. Also, the  data details the different bank campaigns carried out alongside their outcomes with each depositors/clients. This Complete dataset was then used for the analysis. Data Analysis Expression DAX was used to generate some insights and graphcal visuals were designed from the complete datasets as well.
 
